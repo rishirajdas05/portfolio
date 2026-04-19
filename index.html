@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rishi Raj Das — Python Developer</title>
+  <!-- Fonts load async — page renders immediately with system fonts fallback -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" /></noscript>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png" />
+  <link rel="apple-touch-icon" sizes="192x192" href="favicon-192x192.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <span class="nav-logo">Rishi Raj Das</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <ul class="nav-mobile" id="nav-mobile">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-text">Python</div>
+    <div class="hero-inner">
+      <p class="hero-eyebrow"><span class="dot"></span>Open to opportunities</p>
+      <h1 class="hero-name">Rishi Raj<br /><em>Das</em></h1>
+      <p class="hero-role" id="hero-role">Python Developer</p>
+      <p class="hero-desc">I build intelligent backends, REST APIs, and data-driven platforms — with a focus on Django, machine learning, and shipping real things that work in production.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View Work</a>
+        <a href="#contact" class="btn-ghost">Get in Touch</a>
+      </div>
+      <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num">2</span>
+        <span class="stat-label">Internships</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">150+</span>
+        <span class="stat-label">LeetCode Solved</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">95%+</span>
+        <span class="stat-label">ML Model Accuracy</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">MITS</span>
+        <span class="stat-label">B.Tech IT, 2027</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label">01 — About</div>
+      <div class="about-grid">
+        <div class="about-left">
+          <h2 class="section-heading">Building things<br /><em>that matter</em></h2>
+          <div class="about-image-wrap">
+            <img src="profile.jpg" alt="Rishi Raj Das" class="about-photo" />
+            <div class="about-image-border"></div>
+          </div>
+        </div>
+        <div class="about-right">
+          <p class="about-text">I'm a Python Developer from Gwalior, Madhya Pradesh, pursuing B.Tech in Information Technology at Madhav Institute of Technology and Science. My work spans backend engineering, REST API development, machine learning, and cybersecurity — with real production experience from internships at Perpex and C-DAC Noida.</p>
+          <p class="about-text">I care about clean architecture, measurable outcomes, and code that holds up under production pressure. When I'm not building, I'm solving on LeetCode, competing in CodeChef and Codeforces, or digging into something new in the ML space.</p>
+          <div class="about-pills">
+            <span class="pill">Django Backend</span>
+            <span class="pill">ML / AI</span>
+            <span class="pill">Cybersecurity</span>
+            <span class="pill">REST APIs</span>
+            <span class="pill">PostgreSQL</span>
+            <span class="pill">Competitive Programmer</span>
+          </div>
+          <div class="about-links">
+            <a href="https://github.com/rishirajdas05" target="_blank" class="about-link">GitHub ↗</a>
+            <a href="https://linkedin.com/in/rishi-rajdas-04b6942a3" target="_blank" class="about-link">LinkedIn ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label">02 — Projects</div>
+      <h2 class="section-heading">Selected<br /><em>Work</em></h2>
+      <div class="projects-grid">
+
+        <article class="project-card featured">
+          <div class="project-meta">
+            <div class="project-number">01</div>
+            <div class="project-tag">Machine Learning · Django · Scikit-learn</div>
+            <h3 class="project-title">Smart-Kissan</h3>
+            <p class="project-desc">AI-powered crop recommendation platform that predicts suitable crops from soil inputs — NPK values, pH, and environmental conditions. Integrates a Random Forest model with 95%+ accuracy into a real-time Django web interface for Indian farmers.</p>
+            <ul class="project-features">
+              <li>Random Forest model with 95%+ testing accuracy</li>
+              <li>Real-time predictions from NPK &amp; pH soil data</li>
+              <li>Django web interface + PostgreSQL backend</li>
+              <li>Deployed live on Render</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://smart-kissan.onrender.com" target="_blank" class="project-link-primary">Live Demo ↗</a>
+              <a href="https://github.com/rishirajdas05/Smart-Kissan" target="_blank" class="project-link-secondary">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-tech-col">
+            <div class="project-tech">
+              <span>Python</span><span>Django</span><span>Scikit-learn</span><span>Random Forest</span><span>PostgreSQL</span><span>Render</span>
+            </div>
+            <div class="project-stat-group">
+              <div class="project-stat"><span>95%+</span>Accuracy</div>
+              <div class="project-stat"><span>Live</span>Production</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">02</div>
+          <div class="project-tag">Django · PostgreSQL · RBAC</div>
+          <h3 class="project-title">NexForce EMS</h3>
+          <p class="project-desc">Centralized employee management system with CRUD operations, JWT authentication, and role-based access control. Handles employee records, attendance tracking, payroll processes, and admin operations — backed by secure PostgreSQL workflows.</p>
+          <div class="project-tech">
+            <span>Django</span><span>PostgreSQL</span><span>REST API</span><span>JWT</span><span>RBAC</span>
+          </div>
+          <div class="project-links">
+            <a href="https://nexforce-ems.onrender.com" target="_blank" class="project-link-primary">Live Demo ↗</a>
+            <a href="https://github.com/rishirajdas05/NexForce" target="_blank" class="project-link-secondary">GitHub ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">03</div>
+          <div class="project-tag">Django · REST APIs · Internship @ Perpex</div>
+          <h3 class="project-title">Perpex Backend Platform</h3>
+          <p class="project-desc">Developed and maintained 8+ Django backend modules — authentication, employee records, API-driven workflows. Built 10+ REST API endpoints with PostgreSQL integration, reducing backend defects by 30% and average response time by 20%.</p>
+          <div class="project-tech">
+            <span>Python</span><span>Django</span><span>PostgreSQL</span><span>REST APIs</span><span>Git</span>
+          </div>
+          <div class="project-links">
+            <span class="project-link-badge">Professional · Perpex</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">04</div>
+          <div class="project-tag">Python · Cybersecurity · C-DAC Noida</div>
+          <h3 class="project-title">Security Assessment &amp; Automation</h3>
+          <p class="project-desc">Vulnerability assessment across 12+ web application modules at C-DAC Noida. Wrote Python scripts to automate scan log organization, cutting manual effort by 35%. Identified 15+ security findings using Wireshark and Burp Suite.</p>
+          <div class="project-tech">
+            <span>Python</span><span>Wireshark</span><span>Burp Suite</span><span>Linux</span><span>Metasploit</span>
+          </div>
+          <div class="project-links">
+            <span class="project-link-badge">Professional · C-DAC</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label">03 — Skills</div>
+      <h2 class="section-heading">Tools &amp;<br /><em>Technologies</em></h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h4 class="skill-group-title">Languages</h4>
+          <ul class="skill-list">
+            <li><span class="skill-bar" style="--w:95%"></span>Python<span class="skill-level">Expert</span></li>
+            <li><span class="skill-bar" style="--w:78%"></span>JavaScript<span class="skill-level">Advanced</span></li>
+            <li><span class="skill-bar" style="--w:74%"></span>C++<span class="skill-level">Advanced</span></li>
+            <li><span class="skill-bar" style="--w:82%"></span>SQL<span class="skill-level">Advanced</span></li>
+            <li><span class="skill-bar" style="--w:72%"></span>HTML / CSS<span class="skill-level">Advanced</span></li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h4 class="skill-group-title">Frameworks</h4>
+          <ul class="skill-list">
+            <li><span class="skill-bar" style="--w:93%"></span>Django<span class="skill-level">Expert</span></li>
+            <li><span class="skill-bar" style="--w:88%"></span>Django REST Framework<span class="skill-level">Expert</span></li>
+            <li><span class="skill-bar" style="--w:72%"></span>Flask<span class="skill-level">Advanced</span></li>
+            <li><span class="skill-bar" style="--w:63%"></span>React.js / Node.js<span class="skill-level">Intermediate</span></li>
+            <li><span class="skill-bar" style="--w:84%"></span>Scikit-learn<span class="skill-level">Expert</span></li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h4 class="skill-group-title">Databases & Infra</h4>
+          <ul class="skill-list">
+            <li><span class="skill-bar" style="--w:88%"></span>PostgreSQL<span class="skill-level">Expert</span></li>
+            <li><span class="skill-bar" style="--w:76%"></span>MySQL<span class="skill-level">Advanced</span></li>
+            <li><span class="skill-bar" style="--w:82%"></span>Git / GitHub<span class="skill-level">Advanced</span></li>
+            <li><span class="skill-bar" style="--w:68%"></span>Docker<span class="skill-level">Intermediate</span></li>
+            <li><span class="skill-bar" style="--w:78%"></span>Linux<span class="skill-level">Advanced</span></li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h4 class="skill-group-title">Security & Concepts</h4>
+          <ul class="skill-list">
+            <li><span class="skill-bar" style="--w:80%"></span>Wireshark / Burp Suite<span class="skill-level">Advanced</span></li>
+            <li><span class="skill-bar" style="--w:65%"></span>Metasploit<span class="skill-level">Intermediate</span></li>
+            <li><span class="skill-bar" style="--w:88%"></span>DSA / OOP<span class="skill-level">Expert</span></li>
+            <li><span class="skill-bar" style="--w:82%"></span>REST API Design<span class="skill-level">Expert</span></li>
+            <li><span class="skill-bar" style="--w:78%"></span>System Testing / Debugging<span class="skill-level">Advanced</span></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section class="resume section" id="resume">
+    <div class="container">
+      <div class="section-label">04 — Resume</div>
+      <div class="resume-header">
+        <h2 class="section-heading">Experience &amp;<br /><em>Education</em></h2>
+        <a href="resume.pdf" class="btn-primary" download>Download CV ↓</a>
+      </div>
+      <div class="resume-grid">
+
+        <div class="resume-col">
+          <h4 class="resume-col-title">Experience</h4>
+          <div class="timeline">
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">Aug 2025 — Nov 2025</div>
+              <div class="timeline-role">Django Developer Intern</div>
+              <div class="timeline-company">Perpex · Remote</div>
+              <p class="timeline-desc">Built 8+ Django backend modules for authentication, employee records, and API workflows. Developed 10+ REST API endpoints with PostgreSQL integration — reducing backend defects by 30% and average response time by 20%. Delivered sprint tasks through Git-based collaborative workflows.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">Jun 2025 — Jul 2025</div>
+              <div class="timeline-role">Cybersecurity Intern</div>
+              <div class="timeline-company">C-DAC · Noida, India</div>
+              <p class="timeline-desc">Performed vulnerability assessment across 12+ web application modules using Linux-based security and network analysis tools. Wrote Python automation scripts cutting manual analysis effort by 35%. Identified 15+ security findings using Wireshark and Burp Suite; supported structured verification and technical reporting.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="resume-col">
+          <h4 class="resume-col-title">Education</h4>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">Expected Aug 2027</div>
+              <div class="timeline-role">B.Tech — Information Technology</div>
+              <div class="timeline-company">Madhav Institute of Technology and Science, Gwalior</div>
+              <p class="timeline-desc">CGPA: 7.38 / 10. Qualified JEE Main and JEE Advanced. State Youth Parliament Finalist. Active in competitive programming — CodeChef, Codeforces, LeetCode (150+ problems solved).</p>
+            </div>
+          </div>
+
+          <h4 class="resume-col-title" style="margin-top: 3rem;">Certifications &amp; Achievements</h4>
+          <div class="cert-list">
+            <div class="cert-item">
+              <span class="cert-icon">✦</span>
+              <div>
+                <div class="cert-name">AI/ML for Geodata Analysis</div>
+                <div class="cert-org">ISRO / IIRS</div>
+              </div>
+            </div>
+            <div class="cert-item">
+              <span class="cert-icon">✦</span>
+              <div>
+                <div class="cert-name">Cybersecurity Fundamentals</div>
+                <div class="cert-org">Professional Certification</div>
+              </div>
+            </div>
+            <div class="cert-item">
+              <span class="cert-icon">✦</span>
+              <div>
+                <div class="cert-name">Qualified JEE Main &amp; JEE Advanced</div>
+                <div class="cert-org">National Level Engineering Entrance</div>
+              </div>
+            </div>
+            <div class="cert-item">
+              <span class="cert-icon">✦</span>
+              <div>
+                <div class="cert-name">150+ LeetCode Problems</div>
+                <div class="cert-org">CodeChef · Codeforces Contestant</div>
+              </div>
+            </div>
+            <div class="cert-item">
+              <span class="cert-icon">✦</span>
+              <div>
+                <div class="cert-name">State Youth Parliament Finalist</div>
+                <div class="cert-org">Madhya Pradesh</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label">05 — Contact</div>
+      <div class="contact-grid">
+        <div class="contact-left">
+          <h2 class="section-heading">Let's build<br /><em>something</em></h2>
+          <p class="contact-sub">I'm open to internships, full-time roles, freelance projects, and interesting collaborations. If you have an idea or an opening — let's talk.</p>
+          <div class="contact-info">
+            <a href="mailto:05rishirajdas@gmail.com" class="contact-item">
+              <span class="contact-icon">@</span>
+              <span>05rishirajdas@gmail.com</span>
+            </a>
+            <a href="tel:+918982125434" class="contact-item">
+              <span class="contact-icon">✆</span>
+              <span>+91 8982125434</span>
+            </a>
+            <a href="https://github.com/rishirajdas05" target="_blank" class="contact-item">
+              <span class="contact-icon">GH</span>
+              <span>github.com/rishirajdas05</span>
+            </a>
+            <a href="https://linkedin.com/in/rishi-rajdas-04b6942a3" target="_blank" class="contact-item">
+              <span class="contact-icon">LI</span>
+              <span>linkedin.com/in/rishi-rajdas-04b6942a3</span>
+            </a>
+            <div class="contact-item">
+              <span class="contact-icon">⌖</span>
+              <span>Gwalior, Madhya Pradesh, India</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary form-submit">Send Message →</button>
+          <p class="form-success" id="form-success">Message sent! I'll get back to you soon.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-name">Rishi Raj Das</span>
+        <span class="footer-copy">Designed &amp; Built from scratch · 2025</span>
+        <div class="footer-links">
+          <a href="https://github.com/rishirajdas05" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/in/rishi-rajdas-04b6942a3" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
