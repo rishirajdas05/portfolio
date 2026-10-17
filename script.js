@@ -65,7 +65,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // ---- Reveal on Scroll ----
 const revealSelectors = [
   '.section-label', '.section-heading', '.about-text', '.about-pills',
-  '.about-links', '.about-image-wrap', '.project-card', '.skill-group',
+  '.about-links', '.about-focus', '.about-image-wrap', '.project-card', '.skill-group',
   '.timeline-item', '.cert-item', '.contact-left', '.contact-form', '.stat',
 ];
 revealSelectors.forEach(sel => {
@@ -85,6 +85,7 @@ const roleEl = document.getElementById('hero-role');
 const roles = [
   'Python Developer',
   'Django Backend Engineer',
+  'FastAPI Developer',
   'AI / ML Builder',
   'Cybersecurity Practitioner',
   'REST API Specialist',
@@ -137,23 +138,54 @@ window.addEventListener('scroll', () => {
 }, { passive: true });
 
 // ---- Contact Form ----
+// Posts to Netlify Forms when hosted on Netlify. If that is unavailable
+// (other hosts, local file), opens the visitor's mail app with the message prefilled.
 const form = document.getElementById('contact-form');
 const formSuccess = document.getElementById('form-success');
-form.addEventListener('submit', (e) => {
+const CONTACT_EMAIL = '05rishirajdas@gmail.com';
+
+function resetButton(btn) {
+  setTimeout(() => {
+    btn.textContent = 'Send Message →';
+    btn.style.opacity = '1';
+    btn.disabled = false;
+    formSuccess.classList.remove('visible');
+  }, 4000);
+}
+
+function mailtoFallback(data) {
+  const subject = encodeURIComponent('Portfolio enquiry from ' + data.get('name'));
+  const body = encodeURIComponent(data.get('message') + '\n\nFrom: ' + data.get('name') + ' <' + data.get('email') + '>');
+  window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
+}
+
+form.addEventListener('submit', async (e) => {
   e.preventDefault();
   const btn = form.querySelector('.form-submit');
+  const data = new FormData(form);
   btn.textContent = 'Sending...';
   btn.style.opacity = '0.7';
-  setTimeout(() => {
+  btn.disabled = true;
+
+  try {
+    if (location.protocol === 'file:') throw new Error('local file');
+    const res = await fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(data).toString(),
+    });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
     btn.textContent = 'Sent!';
+    formSuccess.textContent = "Message sent! I'll get back to you soon.";
     formSuccess.classList.add('visible');
     form.reset();
-    setTimeout(() => {
-      btn.textContent = 'Send Message →';
-      btn.style.opacity = '1';
-      formSuccess.classList.remove('visible');
-    }, 4000);
-  }, 1200);
+  } catch (err) {
+    mailtoFallback(data);
+    btn.textContent = 'Opening mail app...';
+    formSuccess.textContent = `Your mail app should open with the message ready. If not, email ${CONTACT_EMAIL}.`;
+    formSuccess.classList.add('visible');
+  }
+  resetButton(btn);
 });
 
 // ---- Page Load Fade ----
